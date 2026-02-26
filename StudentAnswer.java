@@ -5,7 +5,7 @@ public class StudentAnswer {
   // constructor
   public StudentAnswer(String n, String[] arr){
     studentName = n;
-    for ( int i=0; i<answer; i++){
+    for ( int i=0; i< this.answer.length; i++){
         answer[i] = arr[i];
     }
   }
@@ -17,9 +17,9 @@ public String getName(){
 public String[] getAnswer(){
     return answer;
 }
-public toString(){
-    String fin = name + "\n"
-    for ( int i=0; i<answer; i++){
+public String toString(){
+    String fin = studentName + "\n";
+    for ( int i=0; i< this.answer.length; i++){
         fin += (i+1) + ") \t" + answer[i] + "\n";
     }
     return  fin;
