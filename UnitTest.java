@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class UnitTest {
 
@@ -52,9 +51,9 @@ public class UnitTest {
     }
     return correct;
   }
- 
+ public int totalMistakes(String name){
+  return answerKey.length - totalCorrect(name);
+ }
 }
 
-public int totalMistakes(String name){
-  return -totalCorrect(name) + 20;
-}
+
